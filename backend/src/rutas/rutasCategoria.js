@@ -4,7 +4,7 @@ const controladorCategoria = require('../controladores/controladorCategoria');
 
 // Rutas para el CRUD de usuarios
 router.post('/', controladorCategoria.crearCategoria); 
-router.get('/', controladorCategoria.obtenerCategorias); 
+router.get('/:id', controladorCategoria.obtenerCategorias); 
 router.put('/:id', controladorCategoria.actualizarCategoria); 
 router.delete('/:id', controladorCategoria.eliminarCategoria); 
 

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const CarritoSchema = new mongoose.Schema({
-    usuario: {type: mongoose.Schema.Types.ObjectId, ref: 'Usuario', required: true},
+    usuarioId: {type: String, unique: true, required: true},
     productos: [{
-        cantidad: {type: Number, required: true},
-        precio: {type: Number, required: true},
+        producto: { type: mongoose.Schema.Types.ObjectId, ref: 'Producto', required: true },
+        cantidad: { type: Number, required: true }
     }],
     fechaActualizacion: {type: Date, default: Date.now},
 });

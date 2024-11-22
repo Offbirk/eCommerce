@@ -1,40 +1,46 @@
 const Orden = require('../modelos/orden');
+const Carrito = require('../modelos/carrito');
 
-exports.crearOrden = async (req, res) => {
+exports.crearOrdenDesdeCarrito = async (req, res) => {
+    const { usuarioId } = req.params
     try {
-        const nuevaOrden = new Orden(req.body);
-        await nuevaOrden.save();
-        res.status(201).json(nuevaOrden);
-    } catch(error) {
-        res.status(500).json({mensaje: 'Error al crear la orden', error: error.message});
-    }
-};
-
-exports.obtenerOrdenes = async (req, res) => {
-    try {
-        const ordenes = await Orden.find().populate('usuario').populate('productos.producto');
-        res.status(200).json(ordenes);
-    } catch(error) {
-        res.status(500).json({mensaje: 'Error al obtener las ordenes', error: error.message})
-    }
-};
-
-exports.actualizarOrden = async (req, res) => {
-    try {
-        const ordenActualizada = await Orden.findByIdAndUpdate(req.params.id, req.body, {
-            new: true
+        const carrito = await Carrito.findOne({ usuarioId: usuarioId }).populate('productos.producto')
+        if(!carrito){
+            return res.status(404).json({ mensaje: ' Carrito no encontrado'})
+        }
+        let total=0;
+        const productosOrden = carrito.productos.map(item =>{
+            const precio = item.producto.precio * item.cantidad
+            total+= precio
+            return{
+                producto: item.producto,
+                cantidad: item.cantidad,
+                precio: precio
+            }
+        })
+        const nuevaOrden = new Orden( {
+            usuarioId: usuarioId,
+            carritoId: carrito._id,
+            productos: productosOrden,
+            total: total
         });
-        res.status(200).json(ordenActualizada);
-    } catch(error) {
-        res.status(500).json({mensaje: 'Error al actualizar la orden', error: error.message});
+        await nuevaOrden.save();
+        await Carrito.findOneAndUpdate({ usuarioId: usuarioId }, {productos: []})
+        res.status(201).json({ mensaje: 'Orden creada con exito', orden: nuevaOrden});
+    } catch (error) {
+        res.status(500).json({ mensaje: 'Error al crear la orden', error: error.message });
     }
 };
 
-exports.eliminarOrden = async (req, res) => {
+exports.obtenerOrden = async (req, res) => {
+    const { usuarioId, ordenId } = req.params
     try {
-        await Orden.findByIdAndDelete(req.params.id);
-        res.status(200).json({mensaje: 'Orden eliminada correctamente'});
-    } catch(error) {
-        res.status(500).json({mensaje: 'Error al eliminar la orden', error: error.message});
+        const orden = await Orden.findOne({_id: ordenId, usuarioId: usuarioId}).populate('productos.producto');
+        if(!orden){
+            return res.status(404).json({ mensaje: 'Orden no encontrada'})
+        }
+        res.status(200).json(orden);
+    } catch (error) {
+        res.status(500).json({ mensaje: 'Error al obtener las ordenes', error: error.message });
     }
 };

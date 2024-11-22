@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const OrdenSchema = new mongoose.Schema({
-    usuario: {type: mongoose.Schema.Types.ObjectId, ref:'Usuario', required: true},
+    usuarioId: {type: String, required: true},
     fechaCreacion: {type: Date, default: Date.now},
     productos: [{
         producto: {type: mongoose.Schema.Types.ObjectId, ref: 'Producto', required: true},

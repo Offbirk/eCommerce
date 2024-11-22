@@ -1,35 +1,44 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const conectarBD = require('./src/configuracion/baseDatos');
+const conectarBDMongo = require('./src/configuracion/baseDatos'); // MongoDB
+const { conectarBDPostgres } = require('./src/configuracion/baseDatosPostgres'); // PostgreSQL
+const middlewareAutenticacion = require('./src/middleware/middlewareAutenticacion');
 
-dotenv.config()
+dotenv.config();
 
-const app = express()
+const app = express();
 
-app.use(express.json()) //Middleware para parsear el JSON
-app.use(cors())
-conectarBD()
+app.use(express.json());
+app.use(cors());
 
-//rutas
-app.use('/api/autenticacion', require('./src/rutas/rutasAutenticacion'))
-app.use('/api/productos', require('./src/rutas/rutasProducto'))
-app.use('/api/usuarios', require('./src/rutas/rutasUsuario'))
-app.use('/api/ordenes', require('./src/rutas/rutasOrden'))
-app.use('/api/carrito', require('./src/rutas/rutasCarrito'))
-app.use('/api/categorias', require('./src/rutas/rutasCategoria'))
+conectarBDMongo(); 
+conectarBDPostgres(); 
 
-//estados
-app.use((req, res, next) => {
-    res.status(404).json({mensaje: 'Ruta no encontrada'})
-})
+app.use('/api/productos', require('./src/rutas/rutasProducto'));
+app.use('/api/usuarios', require('./src/rutas/rutasUsuario'));
+app.use('/api/ordenes', require('./src/rutas/rutasOrden'));
+app.use('/api/carrito', require('./src/rutas/rutasCarrito'));
+app.use('/api/categorias', require('./src/rutas/rutasCategoria'));
 
-app.use((error, req, res, next) => {
-    console.error(error.stack)
-    res.status(500).json({mensaje: 'Error en el servidor', error: error.message})    
+
+app.get('/api/usuarios/perfil', middlewareAutenticacion, (req, res) => {
+    res.status(200).json({ mensaje: 'Perfil de usuario', usuario: req.user });
 });
 
-const PORT = process.env.PORT || 5000
+
+app.use((req, res, next) => {
+    res.status(404).json({ mensaje: 'Ruta no encontrada' });
+});
+
+
+app.use((error, req, res, next) => {
+    console.error(error.stack);
+    res.status(500).json({ mensaje: 'Error en el servidor', error: error.message });
+});
+
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en el puerto ${PORT}`)
+    console.log(`Servidor ejecutándose en el puerto ${PORT}`);
 });
