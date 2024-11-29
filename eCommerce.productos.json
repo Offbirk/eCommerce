@@ -1,0 +1,350 @@
+[{
+  "_id": {
+    "$oid": "673ca66b502e622477d5882a"
+  },
+  "nombre": "Vitacerebrina",
+  "descripcion": "Jarabe sabor naranja 180mL",
+  "precio": 48000,
+  "imagenUrl": "https://lh3.googleusercontent.com/u731tyuwxRJDk7Lt5nbT-yN0X9D2dUcbomjAm2DBgBUlj8LhrQLourQy41nQn62SB7NGk225HRjMKm93suaOzXaOAagbquVEvqU=s360",
+  "stock": 40,
+  "categoria": {
+    "$oid": "673ca4a8502e622477d58827"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673e06a3883d4eb2e74b91fb"
+  },
+  "nombre": "Crema hidratante",
+  "descripcion": "crema con esencias y avena para piel deshidratada 80mL",
+  "precio": 25000,
+  "imagenUrl": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/10/07/16651354681418.jpg",
+  "stock": 30,
+  "categoria": {
+    "$oid": "673dfdda883d4eb2e74b91f1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673e0a13883d4eb2e74b91fd"
+  },
+  "nombre": "Perfume Homen Elo masculino",
+  "descripcion": "perfume que fusiona notas amaderadas y la esencia de hierbas aromáticas",
+  "precio": 149100,
+  "imagenUrl": "https://staticco.natura.com/cdn/ff/JOeoJRrhSbUFY8Vd-WzYXJDV9RoXB8jO54PQR1TUvNg/1729057570/public/products/135068_1_7.jpg",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673dfdda883d4eb2e74b91f1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673e0b03883d4eb2e74b91ff"
+  },
+  "nombre": "Perfume Natura Humor Liberta",
+  "descripcion": "Perfume femenino Eau de Toilette de 75ml",
+  "precio": 149100,
+  "imagenUrl": "https://staticco.natura.com/cdn/ff/O6jiZN9yUnUkF8GHa6P8_SJ9O3kgnd15Ym53eZchQjU/1731910242/public/products/20834_1_13.jpg",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673dfdda883d4eb2e74b91f1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673e0be1883d4eb2e74b9201"
+  },
+  "nombre": "Avena integral en hojuelas",
+  "descripcion": "Avena en hojuelas Touch Sabor Natural x 300gr",
+  "precio": 5900,
+  "imagenUrl": "https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/7/7/7702007078220.jpg",
+  "stock": 50,
+  "categoria": {
+    "$oid": "673dfd0b883d4eb2e74b91ef"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673e0e2e883d4eb2e74b9203"
+  },
+  "nombre": "Fibra integral",
+  "descripcion": "Fibra total integral 200g",
+  "precio": 6500,
+  "imagenUrl": "https://acdn.mitiendanube.com/stores/001/857/395/products/nuevos-productos-87-ef0f137f0f3782f1bc17192401370512-640-0.jpg",
+  "stock": 50,
+  "categoria": {
+    "$oid": "673dfd0b883d4eb2e74b91ef"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c0b1784efe62b85dd00a"
+  },
+  "nombre": "Té herbal Bitaco",
+  "descripcion": "Te herbal bitaco x 20g sabores Piña Jengibre y Curcuma",
+  "precio": 17450,
+  "imagenUrl": "https://cdn1.totalcommerce.cloud/homesentry/product-zoom/es/te-herbal-bitaco-x20-gr-pina-jengibre-curcuma-1.webp",
+  "stock": 30,
+  "categoria": {
+    "$oid": "673dfd0b883d4eb2e74b91ef"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c140784efe62b85dd00c"
+  },
+  "nombre": "Café orgánico tostado en grano",
+  "descripcion": "café de acidez media, con perfil de copa de cítricos, notas de bayas dulces y rojas",
+  "precio": 36800,
+  "imagenUrl": "https://www.cafequindio.com.co/cdn/shop/files/cafe_organico_grano_1_6a47b1d1-49cd-4b7b-8725-2e04379c3a33.png?v=1726147151&width=500",
+  "stock": 20,
+  "categoria": {
+    "$oid": "673dfd0b883d4eb2e74b91ef"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c1ed784efe62b85dd00e"
+  },
+  "nombre": "Aceite esencial de lavanda",
+  "descripcion": "aceite esencial con aroma a lavanda marca Natural light",
+  "precio": 31500,
+  "imagenUrl": "https://naturallight.com.co/cdn/shop/products/Aceite-Esencial-Lavanda.jpg?v=1602023086",
+  "stock": 15,
+  "categoria": {
+    "$oid": "673dfd0b883d4eb2e74b91ef"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c352784efe62b85dd010"
+  },
+  "nombre": "Jabón natural marca Oiris",
+  "descripcion": "jabón 100% natural de Aloe Vera",
+  "precio": 9000,
+  "imagenUrl": "https://oiris.co/cdn/shop/products/aloe_bac1ada7-a448-4e9d-9701-e8028eb5a662_1024x1024@2x.jpg?v=1657640134",
+  "stock": 80,
+  "categoria": {
+    "$oid": "673dfdda883d4eb2e74b91f1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c3e9784efe62b85dd012"
+  },
+  "nombre": "Aceite esencial de manzanilla",
+  "descripcion": "El aceite esencial de Manzanilla tiene un aroma dulce floral que posee efectos calmantes en la piel, la mente y el cuerpo",
+  "precio": 27000,
+  "imagenUrl": "https://panavayu.com/wp-content/uploads/2022/08/Aceite-esencial-mockup-manzanilla.jpg",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673dfdda883d4eb2e74b91f1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c4cf784efe62b85dd014"
+  },
+  "nombre": "Proteína vegetal Naturela",
+  "descripcion": "Proteína de origen vegetal x 180g marca Naturela",
+  "precio": 35500,
+  "imagenUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR7UXe-bg9D1euB8WV2Zzjqonb1_1heF-VKzWHNzjq5kGZ0gp5BFzdOQI_ydLsmzvhq9-4Q1PTQgypKRVAx8Cdp-3oW2Wj9vWcMbj_m1UE8HDqy-g17co0yhw",
+  "stock": 25,
+  "categoria": {
+    "$oid": "673ca4a8502e622477d58827"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c562784efe62b85dd016"
+  },
+  "nombre": "Fibaxil",
+  "descripcion": "Fibaxil X 120 Cápsulas Healthy Am es el suplemento dietario ideal para mejorar tu salud y bienestar.",
+  "precio": 54900,
+  "imagenUrl": "https://artemisa.co/cdn/shop/products/fibaxil-con-hierbas-y-probioticos-x-120-capsulas-325842.jpg?v=1623951290",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673ca4a8502e622477d58827"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c620784efe62b85dd018"
+  },
+  "nombre": "Probióticos Millenium",
+  "descripcion": "Probióticos y prebióticos x 60 cápsulas",
+  "precio": 44400,
+  "imagenUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcREKyQm329NR8Ce6qxSDqFq6TNA4O_OyPJxoSyucuWZPUKa3fErAhH67vGxuMVpwoN6TdOz5QCWobiREj-eBuZ6Dyp4pLw3U4gTkJvu77IQeVBnsIR3yaVmAg",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673ca4a8502e622477d58827"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c6e8784efe62b85dd01a"
+  },
+  "nombre": "Niacina marca Bluebonnet",
+  "descripcion": "Suplemento dietario x 90 cápsulas 100mg de origen vegetal",
+  "precio": 74670,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTRNbCxlHrhvVO__XkpghtIQ8iSatmDHhnibkxvl1EhqXAxfPTA-Sx9sif5TBe_8nG6Mi2sGvhG1Ij2seujfz8vss-gcdgmUAOmJUEamCAQaVim-7KHhJN03sc",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673ca4a8502e622477d58827"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6740c7c8784efe62b85dd01c"
+  },
+  "nombre": "Incienso palo santo",
+  "descripcion": "Incienso marca Tidasi x 8 unds",
+  "precio": 19900,
+  "imagenUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRL2WvySm-Vr88_56T4OjclGds8xEGX0dJfm_6aCtgU2S39vpUpj_ahDdAnPZLliqoiHG23BdTx50ZaRhvnFyBhW-F01OJzd28ZwSPXaS_DW-wv8NRk5Jbq",
+  "stock": 40,
+  "categoria": {
+    "$oid": "673dfe53883d4eb2e74b91f3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6749325b53d4ce20210e72b8"
+  },
+  "nombre": "Hierbas aromáticas",
+  "descripcion": "Paquete de hierbas aromáticas x 100 gr",
+  "precio": 2000,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ0eL1S32EAPKkkvMLlAHBR9wSgrXmHr9157OaBcxPGCbf1PhxaLtB-roaVRle1VTjphOguLNKTYEcn2D-4eOQpj6RibjzJ",
+  "stock": 10,
+  "categoria": {
+    "$oid": "673dfe53883d4eb2e74b91f3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6749331f53d4ce20210e72bc"
+  },
+  "nombre": "Vela aromática",
+  "descripcion": "Vela Decorativa Iluminata Aroma A Vainilla Beige",
+  "precio": 14950,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS_a0mt5GlXi36kB5eJBMHCjEw-HEKDgnKbfUmp7YHC9yfXW82yM-tD_QagOyLTychRnO5cQh7Qj6P7OEe-M-ekpI87R4e9GPcx66lA3EwZownrOxLN0zDrcQ",
+  "stock": 20,
+  "categoria": {
+    "$oid": "673dfe53883d4eb2e74b91f3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "674933e853d4ce20210e72c0"
+  },
+  "nombre": "Eucalipto",
+  "descripcion": "Eucalipto Granaroma x 16gr",
+  "precio": 3150,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSG8-eWC9F6M21mxcqaRtZSlpAjc4qayVPFhtU2KmpLPwQfC011TpcGabhXI4z7L7vr55v2CyLn3kfoGolMYWsulqMLNveOm14mnFPgPQGxetTfNHmA6JJxai0",
+  "stock": 20,
+  "categoria": {
+    "$oid": "673dfe53883d4eb2e74b91f3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "674935cf53d4ce20210e72c6"
+  },
+  "nombre": "Cubre cama para hámsters o ratones",
+  "descripcion": "Ropa De Cama De Papel Ecológico De Fibra De Núcleo",
+  "precio": 125000,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRIhVWDs_iWKVBxjL2-eh5WlrKvuerQ-DuQpSClKYqPCrD3Y77jm9ZBWDJiCo9-e_m9TPYV4WiJhHtSEw5PFkjjfIllKZseCMif74pbpAeqDtCgQ6Z9rpU--EOT",
+  "stock": 5,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6749370753d4ce20210e72cc"
+  },
+  "nombre": "Juego de sábanas",
+  "descripcion": "Juego de sábanas de bambú Beige",
+  "precio": 194000,
+  "imagenUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR-kpBuSZxcKn2aGuFb6IdXVlnd7GmDwVYB0HYWYcaE5ucZVOqweHymxQL0R2Q5R-UEu9YzMsy4yWgxxd4JO_EzHPWbqKEKQv9RHZYr8vY",
+  "stock": 15,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "674937a953d4ce20210e72d0"
+  },
+  "nombre": "Limpiador multiusos",
+  "descripcion": "Ecohome Limpiador Multiusos Ecológico Repelente Insectos 1.2L",
+  "precio": 32990,
+  "imagenUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTQQe06SS9vD401bqa_eVcA4Luz2CaEYs8YxASDQG8YK1n64S3lKzdNE59bQQsNUYyag_mDpC8H3dRP9iVIodgSTZkUkAhftUkAqHlbCgUoQqxrd4WGiC70_fQ",
+  "stock": 40,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "674937fa53d4ce20210e72d2"
+  },
+  "nombre": "Limpiapisos",
+  "descripcion": "Limpiapisos Ecohome x 3800mL",
+  "precio": 80990,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWSSDvrW_AfuJa65ycTcjsHmr9GNLyw4KxacMuTZ0jsAPoMevJKcKnHoyd4KUzi-bNAz66f6V2z_Rrx6G0GE0Rox-j1bV0a9TnV-OXr7vRH8UhI-6yINzhHw",
+  "stock": 20,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "674938c953d4ce20210e72d6"
+  },
+  "nombre": "Desinfectante",
+  "descripcion": "Desinfectante Natural Frutas y Verduras Kleine x1 Litro - Kleine Wolke",
+  "precio": 16900,
+  "imagenUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTSYvUqrD0rvuW4p2FgttON6dPzTD2df2NSn6ZJOaMUmna-ok12aU6KF7qaZW4dFPe9A6X03FEsKg3WgdA9xqLxBGd6jNr9CgtPThYkDQBwiVHJxSzdDnKVc2M",
+  "stock": 50,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6749394e53d4ce20210e72d8"
+  },
+  "nombre": "Esponja vegetal",
+  "descripcion": "Estropajo con cordón marca La Troja",
+  "precio": 7500,
+  "imagenUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTEdqhlrfM-ClAxh-78VuQS2scXhpph-RYFOKBD6utLy29DkaFuCmyexRC6qTFBh_yp1keXHLGbGARFKp-zXcdDgYh2gYJPsD-nyFcsEwaehkypYZPwn-RR",
+  "stock": 30,
+  "categoria": {
+    "$oid": "6749356153d4ce20210e72c4"
+  },
+  "__v": 0
+}]

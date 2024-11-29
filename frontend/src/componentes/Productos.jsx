@@ -29,7 +29,13 @@ const Productos = () => {
             className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
           >
             <h2 className="text-lg font-semibold">{producto.nombre}</h2>
-            <p className="text-gray-600">Precio: ${producto.precio}</p>
+            <img className="w-full h-auto object-cover rounded-md mb-4" src={producto.imagenUrl} alt={producto.nombre} />
+            <h5 className="text-lg font-semibold">Descripción</h5>
+            <p className="text-gray-600">{producto.descripcion}</p>
+            <h5 className="text-lg font-semibold">Categoría</h5>
+            <p className="text-gray-600">{producto.categoria ? producto.categoria.nombre: 'Sin categoría'}</p>
+            <p className="text-gray-700">Precio: ${producto.precio}</p>
+            <p className="text-black-700">Stock: {producto.stock}</p>
           </div>
         ))}
       </div>
