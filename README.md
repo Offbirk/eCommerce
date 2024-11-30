@@ -66,11 +66,17 @@ Para las pruebas de las diferentes *rutas* y *controladores* se utilizó **Postm
 
 **Creación de un producto:** 
 
+[![Crear Producto](https://img.youtube.com/vi/k9yMGaBJiU0/0.jpg)](https://www.youtube.com/watch?v=k9yMGaBJiU0)
+
 <video controls src="./multimedia/crearProducto.mp4" title="Crear Producto"></video>
 
 **Actualización de un producto:**
 
+[![Actualizar Producto](https://img.youtube.com/vi/nDmE6pEAlbQ/0.jpg)](https://www.youtube.com/watch?v=nDmE6pEAlbQ)
+
 <video controls src="./multimedia/actualizarProducto.mp4" title="Actualizar Producto"></video>
+
+[![Eliminar Producto](https://img.youtube.com/vi/EFJIxgSa8tM/0.jpg)](https://www.youtube.com/watch?v=EFJIxgSa8tM)
 
 **Eliminación de un producto:**
 
@@ -155,6 +161,8 @@ El siguiente paso es iniciar sesión y realizar la autenticación para ello se d
 ![alt text](./multimedia/image-1.png)
 
 *prueba de la aplicación React*
+
+[![Prueba React](https://img.youtube.com/vi/bAy_PcJ767o/0.jpg)](https://www.youtube.com/watch?v=bAy_PcJ767o)
 
 <video controls src="./multimedia/pruebaReact.mp4" title="Prueba de React App"></video>
 
