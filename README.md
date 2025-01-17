@@ -22,11 +22,28 @@ autenticación dentro del sistema utilizando **JWT** y un mecanismo de encriptad
 
 **PASO 1: Clonar repositorio** Crear una carpeta en la ruta que desees, abrir esta carpeta en *Visual Studio Code* o tu editor de preferencia. Ejecutar el siguiente comando desde la CONSOLA <code>git init</code> una vez inicializado el repositorio ingresa este otro comando <code>git clone <ruta_de_este_repositorio></code> este proyecto cuenta con dos carpetas una para el *frontend* y otra para el *backend*. 
 
-**PASO 2: Instalar las dependencias** En la CONSOLA del editor utilizar el comando <code>cd frontend</code> para ingresar a la carpeta *frontend*, luego ingresa el comando <code>npm install</code> este comando permitirá instalar las dependencias del archivo *package.json* tailwind, react, react-dom-route, axios...
+**PASO 2: Crear los archivos .env** En la carpeta backend agregar las variables de entorno *archivo .env*
+
+        
+        PORT = puerto_para_mongo
+        MONGO_URL = ruta_para_mongo_db_o_atlas
+        JWT_SECRET = clave_segura_jwt
+        PG_USER = mi_usuario_postgre
+        PG_HOST = mi_host_postgres
+        PG_DATABASE = mi_base_de_datos_usuarios
+        PG_PASSWORD = mi_password_postgre
+        PG_PORT = puerto_para_postgre
+
+En la carpeta frontend tambien se crea un archivo *.env*
+
+    REACT_APP_API_URL=http://localhost:5000/api
+
+
+**PASO 3: Instalar las dependencias** En la CONSOLA del editor utilizar el comando <code>cd frontend</code> para ingresar a la carpeta *frontend*, luego ingresa el comando <code>npm install</code> este comando permitirá instalar las dependencias del archivo *package.json* tailwind, react, react-dom-route, axios...
 
 Este mismo paso se realizará para el backend verificando que la ruta actual sea la carpeta de *backend* se ejecuta el comando <code>npm install</code> para instalar las dependencias *nodemon*, *cors*, *mongoose*, *jsonwebtoken*...
 
-**PASO 3: Iniciar la conexión con las bases de datos** Abrir la terminal de Windows y escribir cmd, una vez dentro escribir el comando <code>mongod</code> para habilitar la conexión con la base de datos MongoDB.
+**PASO 4: Iniciar la conexión con las bases de datos** Abrir la terminal de Windows y escribir cmd, una vez dentro escribir el comando <code>mongod</code> para habilitar la conexión con la base de datos MongoDB.
 
 De igual forma verificar la existencia de la conexión con PostgreSQL,
 
@@ -44,7 +61,7 @@ De igual forma verificar la existencia de la conexión con PostgreSQL,
             rol VARCHAR(50) DEFAULT 'cliente');
 
 
-**PASO 4: Levantar el servidor** Se debe iniciar el servidor tanto en el *backend* como en el *frontend* desde la CONSOLA con los comandos que se muestran a continuación.
+**PASO 5: Levantar el servidor** Se debe iniciar el servidor tanto en el *backend* como en el *frontend* desde la CONSOLA con los comandos que se muestran a continuación.
 
     - Para el backend se ejecuta el comando: 
         npx nodemon servidor.js
